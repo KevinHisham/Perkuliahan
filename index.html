@@ -2,33 +2,137 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>CV Kevin Hisham Dewanto</title>
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="image/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 
-<body>
-  <h1 class="merah center" style="padding: 40px;"> Hi! I'm Kevin</h1>
+<body class="fading-text" style="background-color: rgb(38, 38, 38);">
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top navbar bg-dark border-bottom border-body" data-bs-theme="dark" >
+        <div class="container">
+            <img src="image/logo.png" width="40px">
+          <a class="navbar-brand" href="#"><strong>Portfolio</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav; navbar-nav ms-auto">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" href="#Pendidikan">Pendidikan</a>
+              <a class="nav-link" href="#Card">Card</a>
+              <a class="nav-link" href="#Drawing">Works</a>
+            </div>
+          </div>
+        </div>
+      </nav>
 
-  <table>
-    <tr>
-      <!-- <td>Kevin Hisham Dewanto</th> -->
-      <td><h1>Kevin Hisham Dewanto</h1></th>
-      <td rowspan="6" class="padding"> <img src="foto.jpg"  width="420"></foto></td>
-    </tr>
-    <tr>
-      <td> Halo, Nama saya Kevin Hisham Dewanto. Sekarang saya sedang berkuliah di Telkom University dengan jurusan S1 Sistem Informasi</td>
-    </tr>
-    <tr>
-      <td>Saya lahir di Bandung Barat pada tanggal 5 Februari 2004, namun sekarang saya menetap di Bandung untuk kuliah</td>
-    </tr>
-    <tr>
-      <td> <h2 class="merah">Riwayat Pendidikan:</h2>SMA: Sekolah Indonesia Riyadh <br> Kuliah: Telkom University</td>
-    </tr>
-    <tr>
-      <td>Saya orangnya cenderung kalem dan tidak banyak omong. Namun tergantung situasi, saya juga terkadang banyak bicara.</td>
-    </tr>
-  </table>
+<div style="height: 90px;"></div>
+
+<header>
+    <h1><strong>Welcome!<span class="badge text-bg-danger">To my Website</span></strong></h1>
+</header>
+
+<div class="container"></div>
+<div style="height: 24px;"></div>
+
+<div class="container">
+    <div class="kiri">
+        <!-- <p>Testing kiri</p> -->
+        <img src="image/foto.gif" width="360px" style="float: right;">
+    </div>
+    
+    <div class="kanan">
+        <h3 class="box">Halo, nama saya </h3> 
+        <h1><strong>Kevin Hisham Dewanto</strong></h1> <span class="badge text-bg-primary">Semoga bisa menjadi</span>
+        <h3>Frontend, Illustrator, Graphic Designer</h3>
+        <h4>Also full time Mahasiswa</h4>
+    </div>
+</div>
+
+<div id="Pendidikan" style="height: 136px"></div>
+
+<header>
+    <h1><strong>Riwayat Pendidikan</strong></h1>
+</header>
+
+<div class="container">
+    <div class="kiri">
+        <h2 class="box"><strong>Sekolah Indonesia Riyadh</strong></h2>
+        <h3>2019-2022 | SMA IPA</h3>
+    </div>
+    
+    <div class="kanan">
+        <h2 class="box"><strong>Telkom University</strong></h2>
+        <h3>Sejak 2022 | Jurusan Sistem Informasi</h3>
+    </div>
+</div>
+
+<header>
+    <div class="smallerbox">
+        <h4 style="text-align: center;"><strong>Sedikit tentang saya:</strong></h4>
+        <h3  class="box">Saya orangnya cenderung kalem dan tidak banyak bicara. Namun tergantung situasi, saya juga<br>terkadang banyak bicara. Saya sangat tertarik dengan seni dan desain.</h3>
+    </div>
+</header>
+    
+<div style="height: 96px;"></div>
+<div id="Card" style="height: 28px;"></div>
+<header>
+    <h1><strong>Card(test)</strong></h1>
+</header>
+
+<div class="container">
+    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+        <img src="image/okcomputer.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">The Virgincore Website</h5>
+        <p class="card-text">Personal project saat libur semester. Website berisi musik yang saya sukai. Dibuat dengan html dan css.</p>
+        <a href="virgincorept2.htm" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    
+    <div class="card text-bg-dark mb-3" style="width: 18rem;">
+        <img src="image/card_github.png" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Github Account</h5>
+        <p class="card-text">Akun GitHub <a style="font-weight: bold;">KevinHisham</a>(saya). Masih pemula dan baru belajar. Doakan contributionnya bisa full hijau.</p>
+        <a href="https://github.com/KevinHisham" class="btn btn-primary">Open Github</a>
+        </div>
+    </div>
+
+    <!-- <div class="card text-bg-dark mb-3" style="width: 18rem;">
+        <img src="image/okcomputer.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+        <h5 class="card-title">Placeholder aja</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div> -->
+</div>
+
+<div id="Drawing" style="height: 36px;"></div>
+
+<header>
+    <h1><strong>Illustration/Graphic Design Portfolio</strong></h1>
+</header>
+
+<container>
+    <img src="image/1.png" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/3.jpg" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/7.jpg" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/8.jpg" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/9.jpg" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/10.png" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/11.jpg" width="360px" style="padding: 0 20px 0 20px;">
+    <img src="image/12.jpg" width="360px" style="padding: 0 20px 0 20px;">
+</container>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffff" fill-opacity="1" d="M0,192L40,197.3C80,203,160,213,240,192C320,171,400,117,480,128C560,139,640,213,720,229.3C800,245,880,203,960,192C1040,181,1120,203,1200,213.3C1280,224,1360,224,1400,224L1440,224L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+<!-- <p style="background-color: white; color: black; text-align: center;">Made with love by Kevin</p> -->
 
 </body>
-</html>
-
-<!-- style="border: 1px solid black" -->
