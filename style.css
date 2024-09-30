@@ -1,26 +1,136 @@
-body {
-      background-color: black;
-      color: white;
-      font-size: 20px;
-      padding: 0 200px 0 200px;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu Mono';
+    color: white;  
+  }
+  
+  :root {
+    --bs-font-weight-bold: bold;
+  }
+  
+  body {
+    background-image: url('image/backgroundd.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    color: white;
+}
+
+.kiri {
+    /* background-color: teal; */
+    float: center;
+    scroll-snap-align: start;
+}
+
+.kanan {
+    float: center;
+}
+
+.kiri, .kanan {
+    flex: 1; /* This will make the elements expand to fill the available space */
+  }
+
+header {
+    margin: 50px;
+    font-size: 36px;
+    text-align: center;
+    /* background-color: red; */
+    font-weight:normal;
+}
+
+h4 {
+    text-align: left;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+          typing 2s,
+          cursor .4s step-end infinite alternate;
+}
+
+h3 {
+    color: white;
+    font-size: 28px;
+    font-weight: var(--bs-font-weight-bold);
+    text-align: left;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+          typing 2s,
+          cursor .4s step-end infinite alternate;
+}
+
+h2 {
+    color: white;
+    font-size: 36px;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+          typing 2s,
+          cursor .4s step-end infinite alternate;
 }
 
 h1 {
-    margin: 0;
+    color: white;
+    font-size: 48px;
+    font-weight: var(--bs-font-weight-bold);
     font-weight: bold;
     text-transform: uppercase;
-    text-align: left;
+    width:100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+          typing 2s,
+          cursor .4s step-end infinite alternate;
 }
 
-.center{
-    text-align: center;
+header h1 { animation: none;}
+
+@keyframes cursor {
+  50% {border-color: transparent;}
 }
 
-
-.merah {
-    color: red;
+@keyframes typing {
+  from {width: 0;}
 }
 
-.padding {
-    padding: 0 50px 0 50px;
+.fading-text {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.card {
+    margin: 0 0 4cm 0;
+    color:black;
+}
+
+.box {
+  background-color: grey;
+}
+
+.smallerbox h4 { animation: none;}
+
+a.navbar-brand { color: black;}
+
+.smallerbox {
+  padding: 0 60px 0 60px;
 }
