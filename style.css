@@ -1,16 +1,26 @@
-*{
-    font-family: 'roboto';
-    font-size: 20px;
-    margin: 10px 60px 0 60px;
+body {
+      background-color: black;
+      color: white;
+      font-size: 20px;
+      padding: 0 200px 0 200px;
 }
 
 h1 {
-    font-size: 48px;
-}
-
-h2 {
     margin: 0;
-    font-size: 28px;
+    font-weight: bold;
+    text-transform: uppercase;
     text-align: left;
 }
 
+.center{
+    text-align: center;
+}
+
+
+.merah {
+    color: red;
+}
+
+.padding {
+    padding: 0 50px 0 50px;
+}
